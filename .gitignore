@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/cpp-ansi-colours/.vs/cpp-ansi-colours/v16
+/cpp-ansi-colours/Debug
+/cpp-ansi-colours/cpp-ansi-colours/Debug

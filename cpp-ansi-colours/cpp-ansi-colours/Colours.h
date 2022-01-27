@@ -9,4 +9,12 @@ namespace Colours {
 	// ...
 }
 
+namespace fg {
+
+}
+
+namespace bg {
+
+}
+
 #endif

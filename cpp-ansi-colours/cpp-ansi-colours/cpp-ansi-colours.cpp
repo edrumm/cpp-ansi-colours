@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-#include "Colours.h"
+#include "colours.h"
 
 int main()
 {

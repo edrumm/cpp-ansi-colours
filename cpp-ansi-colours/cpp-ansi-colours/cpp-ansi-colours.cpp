@@ -6,10 +6,16 @@
 
 int main()
 {
-    std::cout << Colours::RED << std::endl;
+    ansi::printColourCodes256();
 
-    // Testing starts HERE
-    // ...
+    ansi::setColour(ansi::FG, 207);
+    ansi::setColour(ansi::BG, 232);
+
+    std::cout << "Hello!";
+
+    ansi::reset();
+
+    std::cout << "Hello!" << std::endl;
 
     return 0;
 }

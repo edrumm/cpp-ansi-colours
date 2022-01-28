@@ -142,7 +142,7 @@
     <ClCompile Include="cpp-ansi-colours.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Colours.h" />
+    <ClInclude Include="colours.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

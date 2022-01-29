@@ -8,12 +8,11 @@ int main()
 {
     ansi::printColourCodes256();
 
-    ansi::setColour(ansi::FG, 207);
-    ansi::setColour(ansi::BG, 232);
+    std::cout << "Hello!" << std::endl;
 
-    std::cout << "Hello!";
 
-    ansi::reset();
+    std::cout << ansi::bg(226, ansi::fg(207, "Hello!").c_str()) << std::endl;
+
 
     std::cout << "Hello!" << std::endl;
 

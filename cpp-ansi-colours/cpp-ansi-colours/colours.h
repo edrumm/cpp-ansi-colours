@@ -13,7 +13,7 @@ namespace ansi {
 	*/
 
 	
-	std::string fg(int code, const char* text) {
+	std::string fg(int code, std::string text) {
 		if (code < 0 || code > 256)
 			return text;
 
@@ -24,7 +24,7 @@ namespace ansi {
 	}
 
 	
-	std::string bg(int code, const char* text) {
+	std::string bg(int code, std::string text) {
 		if (code < 0 || code > 256)
 			return text;
 

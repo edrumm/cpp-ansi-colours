@@ -11,7 +11,7 @@ int main()
     std::cout << "Hello!" << std::endl;
 
 
-    std::cout << ansi::bg(226, ansi::fg(207, "Hello!").c_str()) << std::endl;
+    std::cout << ansi::bg(226, ansi::fg(207, "Hello!")) << std::endl;
 
 
     std::cout << "Hello!" << std::endl;

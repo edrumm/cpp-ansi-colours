@@ -61,11 +61,9 @@ namespace ansi {
 	}
 
 
-	std::string format(int code, std::string text) {
-		
-		if (code < 1 || code == 3 || code == 6) {
-			return "";
-		}
+	std::string format(int code, std::string text) {		
+		if (code < 1 || code == 3 || code == 6)
+			return text;
 
 		std::stringstream s;
 		s << "\033[" << code << "m" << text << "\033[0m";

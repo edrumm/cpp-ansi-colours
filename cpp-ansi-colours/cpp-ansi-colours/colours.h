@@ -5,12 +5,22 @@
 #define COLOURS_H
 
 namespace ansi {
-	
-	/*
-	
-		Redefine constants etc...
-	
-	*/
+
+	enum colours : int {
+		DEFAULT = 0,
+		RED = 1,
+		GREEN = 2,
+		BLUE = 4,
+		MAGENTA = 5,
+		CYAN = 6,
+		WHITE = 15,
+		BLACK = 16,
+		INDIGO = 57,
+		BROWN = 130,
+		ORANGE = 202,
+		PINK = 207,
+		YELLOW = 220
+	};
 
 	
 	std::string fg(int code, std::string text) {
@@ -29,9 +39,14 @@ namespace ansi {
 			return text;
 
 		std::stringstream s;
-		s << "\033[48;5;" << code << "m" << text << " \033[0m";
+		s << "\033[48;5;" << code << "m" << text << "\033[0m";
 
 		return s.str();
+	}
+
+
+	std::string special(int code, std::string text) {
+		return "";
 	}
 
 	

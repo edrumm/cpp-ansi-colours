@@ -11,7 +11,17 @@ int main()
     std::cout << "Hello!" << std::endl;
 
 
-    std::cout << ansi::bg(226, ansi::fg(207, "Hello!")) << std::endl;
+    std::cout << ansi::bg(ansi::YELLOW, ansi::fg(ansi::PINK, "Hello!")) << std::endl;
+
+    std::cout << ansi::bg(ansi::INDIGO, ansi::fg(ansi::YELLOW, "Hello!")) << std::endl;
+
+    std::cout << ansi::bg(226, ansi::fg(ansi::BLACK, "Hello!")) << std::endl;
+
+    std::cout << ansi::bg(47, "Hello!") << std::endl;
+
+    std::cout << ansi::fg(75, "Hello!") << std::endl;
+
+    std::cout << ansi::fg(196, "Hello!") << std::endl;
 
 
     std::cout << "Hello!" << std::endl;
